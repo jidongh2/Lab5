@@ -25,8 +25,34 @@ public class BankAccount {
     private String ownerName;
     public double interestRate;
     private double interestEarned;
+    public void setAccountBalance(double x) {
+        this.accountBalance = x;
+    }
+    public double getAccountBalance(){
+        return this.accountBalance;
+    }
+    public void setAccountNumber(int y){
+        this.accountNumber = y;
+    }
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+    public void setOwnerName( String d){
+        this.ownerName = d;
+    }
+    public String getOwnerName(){
+        return this.ownerName
+    }
+    public void setInterestRate( double e){
+        this.interestRate = e;
+    }
+    public double getInterestRate(){
+        return this.interestRate;
+    }
 
     public BankAccount(final String name, final BankAccountType accountCategory) {
+        setOwnerName(name);
+        this.accountType = accountCategory;
         /*
          * Implement this function
          */
